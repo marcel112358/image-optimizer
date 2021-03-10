@@ -1,0 +1,12 @@
+services:
+  api:
+    container_name: eeImageProcessing
+    build: .
+    ports:
+    - published: 8000
+      target: 8000
+    restart: always
+version: '3.4'
+volumes:
+  datafiles: {}
+
